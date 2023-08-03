@@ -3,8 +3,9 @@
 # basic
 export HAS_SWITCH=has
 export ROBOT_TYPE=spare_sentry
-export LAUNCH=sentry
-# camera
+export LAUNCH=spare_sentry
+export PLANNER_TYPE=pid_planner_params
+# camer
 export MVCAM_SDK_PATH=/opt/MVS
 export MVCAM_COMMON_RUNENV=/opt/MVS/lib
 export CAMERA_TYPE=galaxy_camera
