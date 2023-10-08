@@ -7,8 +7,6 @@ export IMU_TRIGGER=true
 export HW_NAME=rm_can_hw
 export LAUNCH=sentry
 export PLANNER_TYPE=pid_planner_params
-export IMU_TRIGGER=true
-export HW_NAME=rm_can_hw
 # camera
 export MVCAM_SDK_PATH=/opt/MVS
 export MVCAM_COMMON_RUNENV=/opt/MVS/lib
