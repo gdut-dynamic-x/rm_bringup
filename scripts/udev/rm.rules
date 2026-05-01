@@ -9,6 +9,7 @@
 #ACTION=="add",KERNELS=="3-4.2:1.0",SUBSYSTEMS=="usb",MODE:="0777",SYMLINK+="usbDbus"
 #ACTION=="add",KERNELS=="3-4.1:1.0",SUBSYSTEMS=="usb",MODE:="0777",SYMLINK+="usbReferee"
 
+#udevadm info -a -n /dev/ttyACM* | grep -E "idVendor|idProduct|bInterfaceNumber"
 # use for new serial
 #SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="55d2", SYMLINK+="usbReferee", MODE="0666"
 SUBSYSTEM=="usb", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="55d2", MODE="0666", ENV{ID_MM_DEVICE_IGNORE}="1"
